@@ -1,0 +1,113 @@
+/* Copyright © 2022 asASTRA. All rights reserved. */
+/* by asastra.ovh */
+
+/* Screen with width 320px */
+@media (max-width: 359px) {
+  .title {
+    font-size: 62rem;
+  }
+   .d {
+    font-size: 24rem;
+    margin: 0.5em 0.59em 0em;
+  }
+  .control_position {
+    font-size: 24rem;
+    bottom: 12px;
+    left: 15px;
+  }
+  video {
+    min-height: 110vh;
+  }
+}
+
+/* Screen with width 360px */
+@media (min-width: 360px) and (max-width: 479px) {
+  .title {
+    font-size: 78rem;
+  }
+  .d {
+    font-size: 28rem;
+    margin: 0.5em 0.59em 0em;
+  }
+  .control_position {
+    font-size: 32rem;
+    bottom: 12px;
+    left: 18px;
+  }
+  video {
+    min-height: 110vh;
+  }
+}
+
+/* Screen with width 480px */
+@media (min-width: 480px) and (max-width: 639px) {
+  .title {
+    font-size: 96rem;
+  }
+  .d {
+    font-size: 34rem;
+    margin: 0.4em 0.59em 0em;
+  }
+  .control_position {
+    font-size: 32rem;
+    bottom: 20px;
+    left: 22px;
+  }
+  video {
+    min-height: 110vh;
+  }
+}
+
+/* Screen with width 640px */
+@media (min-width: 640px) and (max-width: 767px) {
+  .title {
+    font-size: 90rem;
+  }
+  .d {
+    font-size: 28rem;
+    margin: 0.4em 0.59em 0em;
+  }
+  .control_position {
+    font-size: 40rem;
+    bottom: 20px;
+    left: 22px;
+  }
+  video {
+    min-height: 110vh;
+  }
+}
+
+/* Screen with width 768px */
+@media (min-width: 768px) and (max-width: 1919px) {
+  .title {
+    font-size: 162rem;
+  }
+  .d {
+    font-size: 53rem;
+    margin: 0.5em 0.69em 0em;
+  }
+  .control_position {
+    font-size: 48rem;
+    bottom: 25px;
+    left: 24px;
+  }
+}
+
+/* Screen with width 1920px */
+@media (min-width: 1920px) and (max-width: 3840px) {
+  .title {
+    font-size: 149rem;
+  }
+  .d {
+    font-size: 49rem;
+    margin: 0.3em 0.8em 0em;
+  }
+  .control_position {
+    font-size: 39rem;
+    bottom: 30px;
+    left: 22px;
+  }
+}
+
+/* Copyright © 2022 asASTRA. All rights reserved. */
+/* by asastra.ovh */

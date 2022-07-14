@@ -1,0 +1,101 @@
+/* Copyright © 2022 asASTRA. All rights reserved. */
+/* by asastra.ovh */
+
+/* global'nyy fiks vse i vsya */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html, body {
+    font-size: 1px;
+    
+    background: #000;
+    font-weight: normal;
+    cursor: url(../../libraries/cursor/1.png), default;
+}
+
+/* coinmarketcap */
+.coinmarketcap {
+    position: absolute;
+    display: none;
+    top: 0;
+
+    font-family: Сomic Sans MS, sans-serif;
+    cursor: default;
+    z-index: 4;
+}
+.coinmarketcap:hover {
+    color: #FF5722;
+}
+
+/* pochemy */
+.text {
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 4;
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 34px;
+    color: #fafafa;
+}
+.dud {
+    color: #757575;
+}
+
+/* zagruzOCHKA */
+.loader {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    min-width: 100vw;
+    min-height: 100vh;
+
+    color: #FF0000;
+    background: #0D1117;
+    z-index: 99;
+}
+.loader:after {
+    animation: changeContent .8s linear infinite;
+    font-size: 80px;
+    content: "⠋";
+}
+.loader_text {
+    position: fixed;
+    margin: 4px;
+    bottom: 0;
+
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+@keyframes changeContent{10%{content:"⠙"}20%{content:"⠹"}30%{content:"⠸"}40%{content:"⠼"}50%{content:"⠴"}60%{content:"⠦"}70%{content:"⠧"}80%{content:"⠇"}90%{content:"⠏"}}
+
+/* Copyright © 2022 asASTRA. All rights reserved. */
+/* by asastra.ovh */
