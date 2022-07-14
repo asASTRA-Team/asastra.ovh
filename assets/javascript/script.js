@@ -14,16 +14,16 @@ function setLink(n) {
 
 // NICHEGO OSOBENNOGO
 //▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
-console.log("Интерсено, да!? 🐔"),
-(document.oncontextmenu = function () {
-    return !1;
-}),
-(document.ondragstart = function () {
-    return !1;
-}),
-(document.onkeydown = function () {
-    return !1;
-});
+console.log("Интерсено, да!? 🐔");
+document.oncontextmenu = function () {
+    return false;
+};
+document.ondragstart = function () {
+    return false;
+};
+document.onkeydown = function () {
+    return false;
+};
 //▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
 
 
@@ -48,6 +48,15 @@ var preloader = setInterval(function () {
 //▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
 
 
+// bassBoost
+//▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
+function bassBoost() {
+    var e = document.getElementById("video");
+    e.volume = 1;
+}
+//▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
+
+
 // volume-button on/off
 //▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
 $(document).on("keydown", function (e) {
@@ -55,7 +64,7 @@ $(document).on("keydown", function (e) {
 });
 function toggleMute() {
     document.getElementById("video"); 
-    $("#volume-button").toggleClass("fas fa-volume-off fa-xs").toggleClass("fas fa-volume-up fa-xs"); 
+    $("#volume-button").toggleClass("fas fa-volume-off fa-xs").toggleClass("fas fa-volume-up fa-xs");
     $("video").prop("muted", !$("video").prop("muted"));
 }
 //▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢
@@ -81,7 +90,7 @@ $(document).on("keydown", function (e) {
 function refresh() {
     var e = Math.floor(Math.random() * videoArray.length);
     (document.getElementsByTagName("source")[0].src = "/libraries/videos/" + videoArray[e]), video.load();
-    document.querySelector("#pause-button").className = "b fas fa-pause fa-xs";
+    document.querySelector("#pause-button").className = "control_button fas fa-pause fa-xs";
 }
 var videoArray = ["2.mp4", "4.mp4", "8.webm", "16.webm", "32.webm", "64.webm", "128.webm", "01.webm"];
 //▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢▢

@@ -39,7 +39,7 @@ html, body {
 }
 
 /* GLOBAL PIZDETS */
-.global_position {
+.main_position {
     position: fixed;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +53,10 @@ html, body {
     min-height: 100vh;
     z-index: 3;
 }
+.main_button {
+    margin: 0.3em 0.8em 0em;
+    font-size: 49rem;
+}
 
 /* position aga */
 .control_position {
@@ -63,28 +67,25 @@ html, body {
     font-size: 39rem;
     z-index: 3;
 }
+.bass_position {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
 
-/* VSE DLYA KNOPOCHEK */
-.d {
-    margin: 0.3em 0.8em 0em;
-    font-size: 49rem;
+    font-size: 39rem;
+    z-index: 3;    
+}
 
+/* control panel */
+.main_button, .control_button, .bass_button {
     transition: all 0.7s;
     cursor: pointer;
     color: #fff;
     cursor: url(../../libraries/cursor/2.png), default;
 }
 
-/* control panel b */
-.b {
-    transition: all 0.7s;
-    cursor: pointer;
-    color: #fff;
-    cursor: url(../../libraries/cursor/2.png), default;
-}
-
-/* yep hover */
-.d:hover, .b:hover {
+/* hover button */
+.main_button:hover, .control_button:hover, .bass_button:hover{
     color: #ff0000;
 }
 
@@ -159,6 +160,7 @@ video {
 .stack{display:grid;grid-template-columns:1fr}.stack font{grid-row-start:1;grid-column-start:1;--stack-height:calc(100% / var(--stacks) - 1px);--inverse-index:calc(calc(var(--stacks) - 1) - var(--index));--clip-top:calc(var(--stack-height) * var(--index));--clip-bottom:calc(var(--stack-height) * var(--inverse-index));clip-path:inset(var(--clip-top) 0 var(--clip-bottom) 0);animation:stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms),glitch 2s ease infinite 2s alternate-reverse}.stack font:nth-child(odd){--glitch-translate:8px}.stack font:nth-child(even){--glitch-translate:-8px}@keyframes stack{0%{opacity:0;transform:translateX(-50%);text-shadow:-2px 3px 0 red,2px -3px 0 #00f}80%{transform:none;opacity:1;text-shadow:2px -3px 0 red,-2px 3px 0 #00f}100%{text-shadow:none}}@keyframes glitch{0%{text-shadow:-2px 3px 0 red,2px -3px 0 #00f;transform:translate(var(--glitch-translate))}2%{text-shadow:2px -3px 0 red,-2px 3px 0 #00f}100%,4%{text-shadow:none;transform:none}}
 @keyframes bounceInUp{60%,75%,90%,from,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}from{opacity:0;transform:translate3d(0,3000px,0) scaleY(5)}60%{opacity:1;transform:translate3d(0,-20px,0) scaleY(.9)}75%{transform:translate3d(0,10px,0) scaleY(.95)}90%{transform:translate3d(0,-5px,0) scaleY(.985)}to{transform:translate3d(0,0,0)}}.bounceInUp{animation-name:bounceInUp}
 @keyframes backInDown{0%{transform:translateY(-1200px) scale(.7);opacity:.7}80%{transform:translateY(0) scale(.7);opacity:.7}100%{transform:scale(1);opacity:1}}.backInDown{animation-name:backInDown}
+@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}.fadeInRight{animation-name:fadeInRight}
 @keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}.fadeInLeft{animation-name:fadeInLeft}
 .animated{-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 

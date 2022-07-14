@@ -53,7 +53,7 @@ Unlucky day<br></h1>
 </video>
 
 <!-- glooobal position:)))) -->
-<div class="global_position">
+<div class="main_position">
     
     <!-- TITLE NAME USERNAME NICKNAME FIRST NAME NAMEEEEEEEEEEEEE + anime -->
     <div class="animated backInDown" style="animation-delay: 1.2s; --stacks: 3;">
@@ -66,17 +66,22 @@ Unlucky day<br></h1>
 
     <!-- animatiooon -->
     <div class="animated bounceInUp" style="animation-delay: 2s;">
-        <i class="d fab fa-telegram fa-xs" onclick="setLink('tg://resolve?domain=asASTRAgg')" title="Telegram"></i>
-        <i class="d fab fa-discord fa-xs" onclick="openLink('https://discord.gg/4kGqeCpRvB')" title="Discord"></i>
-        <i class="d fas fa-question-circle fa-xs w" onclick="setLink('../gg/')" title="click me" style="cursor: no-drop;"></i>
+        <i class="main_button fab fa-telegram fa-xs" onclick="setLink('tg://resolve?domain=asASTRAgg')" title="Telegram"></i>
+        <i class="main_button fab fa-discord fa-xs" onclick="openLink('https://discord.gg/4kGqeCpRvB')" title="Discord"></i>
+        <i class="main_button fas fa-question-circle fa-xs w" onclick="setLink('../gg/')" title="click me" style="cursor: no-drop;"></i>
     </div>
 </div>
 
 <!-- control panel -->
 <div class="control_position animated fadeInLeft" style="animation-delay: 3.5s;">
-    <i class="b fas fa-volume-off fa-xs" id="volume-button" onclick="toggleMute();"></i>
-    <i class="b fas fa-pause fa-xs" id="pause-button" onclick="togglePlay();"></i>
-    <i class="b fas fa-forward fa-xs" id="next-button" onclick="refresh();"></i>
+    <i class="control_button fas fa-volume-off fa-xs" id="volume-button" onclick="toggleMute();"></i>
+    <i class="control_button fas fa-pause fa-xs" id="pause-button" onclick="togglePlay();"></i>
+    <i class="control_button fas fa-forward fa-xs" onclick="refresh();"></i>
+</div>
+
+<!-- control panel -->
+<div class="bass_position animated fadeInRight" style="animation-delay: 3.5s;">
+<i class="bass_button fas fa-solid fa-bomb fa-xs" title="BassBoost?" id="bassBoost" onclick="bassBoost();"></i>
 </div>
 
 </body>
