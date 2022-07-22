@@ -37,7 +37,7 @@ html, body {
 
     font-family: Сomic Sans MS, sans-serif;
     cursor: default;
-    z-index: 4;
+    z-index: 5;
 }
 .coinmarketcap:hover {
     color: #FF5722;
