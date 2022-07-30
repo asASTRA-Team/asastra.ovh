@@ -1,7 +1,7 @@
 /* Copyright © 2022 asASTRA. All rights reserved. */
 /* by asastra.ovh */
 
-/* global'nyy fiks vse i vsya */
+/* globalʹnyy fiks vse i vsikh */
 *,
 *::before,
 *::after {
@@ -20,11 +20,12 @@
     -ms-user-select: none;
     user-select: none;
 }
-html, body {
+html,
+body {
     position: fixed;
     min-height: 100vh;
     font-size: 1px;
-    
+
     background: #000;
     font-weight: normal;
     cursor: url(../../libraries/cursor/1.png), default;
@@ -38,7 +39,7 @@ html, body {
     font-size: 149rem;
 }
 
-/* GLOBAL PIZDETS */
+/* 1 pozytsiya */
 .main_position {
     position: fixed;
     flex-direction: column;
@@ -58,25 +59,29 @@ html, body {
     font-size: 49rem;
 }
 
-/* position aga */
+/* 2 pozytsiya */
 .control_position {
     position: fixed;
     bottom: 30px;
     left: 22px;
-
-    font-size: 39rem;
     z-index: 3;
 }
+.control_button {
+    font-size: 39rem;
+}
+
+/* 3 pozytsiya */
 .bass_position {
     position: fixed;
     bottom: 30px;
     right: 25px;
-
+    z-index: 3;
+}
+.bass_button {
     font-size: 39rem;
-    z-index: 3;    
 }
 
-/* control panel */
+/* vse dlya knopok i knopky */
 .main_button, .control_button, .bass_button {
     transition: all 0.7s;
     cursor: pointer;
@@ -89,7 +94,7 @@ html, body {
     color: #ff0000;
 }
 
-/* CHTO-TO STRASHNOYe */
+/* mabutʹ tak potribno */
 video {
     position: absolute;
     min-width: 100vw;
@@ -108,8 +113,7 @@ video {
     transform: translate(-50%,-50%);
     z-index: -9999;
 }
-
-/* zatemnyayet vse i vsya */
+/* ficha dlya tumana */
 .video:after {
     content: "";
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI4RkZBQTgzNzg1NzExRTU4NTQyODc3OUM4MTZGMUREIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjI4RkZBQTg0Nzg1NzExRTU4NTQyODc3OUM4MTZGMUREIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjhGRkFBODE3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjhGRkFBODI3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz66uHInAAAAIUlEQVR42mL5//8/AyMj42YGIGBigABfEMEIkoEBgAADAKvuBwVS8BAjAAAAAElFTkSuQmCC); 
@@ -125,7 +129,7 @@ video {
     min-height: 100vh;
 }
 
-/* zagruzOCHKA */
+/* loader zvychaynyy */
 .loader {
     position: relative;
     justify-content: center;
@@ -137,12 +141,12 @@ video {
 
     color: #FF0000;
     background: #0D1117;
-    z-index: 99;
+    z-index: 99; 
 }
 .loader:after {
     animation: changeContent .8s linear infinite;
     font-size: 80px;
-    content: "⠋";
+    content: "⠋"; 
 }
 .loader_text {
     position: fixed;
@@ -152,11 +156,11 @@ video {
     font-family: Verdana, sans-serif;
     font-size: 16px;
     font-weight: normal;
-    text-align: center;
+    text-align: center; 
 }
 @keyframes changeContent{10%{content:"⠙"}20%{content:"⠹"}30%{content:"⠸"}40%{content:"⠼"}50%{content:"⠴"}60%{content:"⠦"}70%{content:"⠧"}80%{content:"⠇"}90%{content:"⠏"}}
 
-/* anime */
+/* anime yakoho ya zasluzhyv */
 .stack{display:grid;grid-template-columns:1fr}.stack font{grid-row-start:1;grid-column-start:1;--stack-height:calc(100% / var(--stacks) - 1px);--inverse-index:calc(calc(var(--stacks) - 1) - var(--index));--clip-top:calc(var(--stack-height) * var(--index));--clip-bottom:calc(var(--stack-height) * var(--inverse-index));clip-path:inset(var(--clip-top) 0 var(--clip-bottom) 0);animation:stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms),glitch 2s ease infinite 2s alternate-reverse}.stack font:nth-child(odd){--glitch-translate:8px}.stack font:nth-child(even){--glitch-translate:-8px}@keyframes stack{0%{opacity:0;transform:translateX(-50%);text-shadow:-2px 3px 0 red,2px -3px 0 #00f}80%{transform:none;opacity:1;text-shadow:2px -3px 0 red,-2px 3px 0 #00f}100%{text-shadow:none}}@keyframes glitch{0%{text-shadow:-2px 3px 0 red,2px -3px 0 #00f;transform:translate(var(--glitch-translate))}2%{text-shadow:2px -3px 0 red,-2px 3px 0 #00f}100%,4%{text-shadow:none;transform:none}}
 @keyframes bounceInUp{60%,75%,90%,from,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}from{opacity:0;transform:translate3d(0,3000px,0) scaleY(5)}60%{opacity:1;transform:translate3d(0,-20px,0) scaleY(.9)}75%{transform:translate3d(0,10px,0) scaleY(.95)}90%{transform:translate3d(0,-5px,0) scaleY(.985)}to{transform:translate3d(0,0,0)}}.bounceInUp{animation-name:bounceInUp}
 @keyframes backInDown{0%{transform:translateY(-1200px) scale(.7);opacity:.7}80%{transform:translateY(0) scale(.7);opacity:.7}100%{transform:scale(1);opacity:1}}.backInDown{animation-name:backInDown}
@@ -164,7 +168,7 @@ video {
 @keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}.fadeInLeft{animation-name:fadeInLeft}
 .animated{-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
 
-/* vse yasno no nikhuya ne yasno */
+/* font feys na minimalkakh */
 @font-face {
     font-family: Pompadur;
     src: url(../../libraries/shreks/fonts.eot);
